@@ -1,5 +1,5 @@
-
-{% include "header.html" %}
+{% extends "base.j2" %}
+{% block content %}
 <h1 class="text-4xl py-2">Books</h1>
 <table class="table-auto m-auto w-full">
   <thead>
@@ -32,4 +32,4 @@
     {% endfor %}
   </tbody>
 </table>
-{% include "footer.html" %}
+{% endblock %}
